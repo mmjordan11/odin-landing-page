@@ -17,10 +17,9 @@ body>* {
 
 header {
   justify-content: space-between;
-  padding-bottom: 32px;
 }
 
-header, .hero {
+header, .hero, footer {
   background-color: #1F2937;
   display: flex;
   align-items: center;
@@ -40,19 +39,23 @@ a {
   text-decoration: none;
 }
 
-.header-logo {
+.header-logo, .cta-main-text {
   font-size: 24px;
   color: #F9FAF8;
   font-weight: 700;
 }
 
-.header-link, .hero-secondary-text, button {
+.header-link, .hero-secondary-text, button, footer, footer a {
   font-size: 18px;
   color: #E5E7EB;
 }
 
 .header-link, .hero-secondary-text {
   font-weight: 300;
+}
+
+.hero-img, .friend-img, .message-box {
+  border-radius: 1em;
 }
 
 button {
@@ -62,12 +65,14 @@ button {
   border: none;
 }
 
-.hero, .info, .quote {
+.info, .quote, .cta {
   padding-top: 50px;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 
 .hero {
+  padding-top: 100px;
+  padding-bottom: 100px;
   display: flex;
   align-items: center;
   gap: 32px;
@@ -89,7 +94,7 @@ button {
   color: #F9FAF8;
 }
 
-button, .call-to-action {
+button, .message-box {
   background-color: #3882F6;
 }
 
@@ -162,6 +167,8 @@ button, .call-to-action {
 
 .quote {
   background-color: #E5E7EB;
+  padding-left: 25vw;
+  padding-right: 25vw;
 }
 
 .quote-text {
@@ -175,4 +182,33 @@ button, .call-to-action {
 .quote-name {
   text-align: right;
   font-size: 20px;
+}
+
+.message-box {
+  color: #F9FAF8;
+  padding: 32px 10vw;
+  border-radius: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.cta-text {
+  min-width: 60%;
+  flex: 1;
+}
+
+.cta-button {
+  border: 2px solid;
+  flex-shrink: 0;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 0;
 }
