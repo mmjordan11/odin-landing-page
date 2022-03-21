@@ -62,7 +62,7 @@ button {
   border: none;
 }
 
-.hero, .info {
+.hero, .info, .quote {
   padding-top: 50px;
   padding-bottom: 100px;
 }
@@ -115,10 +115,13 @@ button, .call-to-action {
 .info>* {
 }
 
-.info-header {
-  font-size: 36px;
+.info-header, .quote-name {
   font-weight: 900;
   color: #1F2937;
+}
+
+.info-header {
+  font-size: 36px;
   padding-bottom: 32px;
 }
 
@@ -155,4 +158,21 @@ button, .call-to-action {
 .friend-name {
   text-align: right;
   font-weight: 700;
+}
+
+.quote {
+  background-color: #E5E7EB;
+}
+
+.quote-text {
+  font-size: 36px;
+  font-weight: 300;
+  font-style: italic;
+  color: #1F2937;
+  padding-bottom: 16px;
+}
+
+.quote-name {
+  text-align: right;
+  font-size: 20px;
 }
