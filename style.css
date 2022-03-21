@@ -71,6 +71,7 @@ button {
   display: flex;
   align-items: center;
   gap: 32px;
+  flex-wrap: wrap;
 }
 
 .hero-text {
@@ -79,6 +80,7 @@ button {
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
+  min-width: 300px;
 }
 
 .hero-main-text {
@@ -99,7 +101,7 @@ button, .call-to-action {
 }
 
 .hero-img {
-  min-width: 450px;
+  min-width: 300px;
   width: 100%;
   height: auto;
 }
@@ -122,16 +124,17 @@ button, .call-to-action {
 
 .friend-cards {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   gap: 16px;
+  flex-wrap: wrap;
 }
 
 .card {
-  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0 16px;
+  width: 175px
 }
 
 .friend-img {
